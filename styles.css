@@ -10,6 +10,7 @@ html , body{
   
 }
 
+
 .calculator{
     display: grid;
     width: 200px;
@@ -18,5 +19,20 @@ html , body{
     grid-template-rows: repeat(5, 1fr);
     gap: 3px;
   
+}
+
+.output{
+    padding: 2px;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: column;
+    font-size: 14px;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid blue
+}
+.output > * {
+    text-align: end;
 }
 
