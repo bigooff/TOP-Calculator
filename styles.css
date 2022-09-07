@@ -9,19 +9,31 @@ html , body{
     align-items: center;
   
 }
+.container{
+    border: 1px solid black;
 
+}
 
 .calculator{
+    background-color: rgba(165, 67, 42, 0.589);
     display: grid;
     width: 200px;
     height: 200px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 3px;
-  
+    gap: 2px;
+}
+.double{
+    grid-column: span 2;
+}
+.calculator > button{
+    background-color: rgba(110, 88, 50, 0.575);
+    /* outline: none; */
+    border: none;
 }
 
 .output{
+    color: aliceblue;
     padding: 2px;
     justify-content: space-between;
     flex: 1;
@@ -30,7 +42,7 @@ html , body{
     display: flex;
     width: 200px;
     height: 50px;
-    border: 1px solid blue
+    background-color: rgba(85, 16, 30, 0.863);
 }
 .output > * {
     text-align: end;

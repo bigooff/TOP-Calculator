@@ -1,24 +1,18 @@
+let displayValue;
 
+function add(a,b){return a + b;}
+function divide(a,b){return a / b;}
+function multiply(a,b){return a * b;}
+function subtract(a,b){return a - b;}
 
 function operate(firstNum,secondNum,operator){
-
+    if(operator === "+"){
+       return add(firstNum,secondNum);
+    }else if(operator === "-"){
+       return subtract(firstNum,secondNum);
+    }else if(operator === "*"){
+       return multiply(firstNum,secondNum);
+    }else if(operator === "/"){
+       return divide(firstNum,secondNum)
+    }
 }
-
-
-
-const basicOperators = {
-    add : function(a,b){
-        return a + b;
-    },
-    subtract : function (a,b){
-        return a - b;
-    },
-    multiply: function (a,b){
-        return a * b;
-    },
-    divide: function (a,b){
-        return a / b;
-    },
-
-}
-
