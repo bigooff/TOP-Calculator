@@ -24,6 +24,7 @@ button:hover{
     grid-column: span 2;
 }
 .output{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px;
     background-color: rgba(14, 13, 13, 0.562);
     grid-column: span 4;
