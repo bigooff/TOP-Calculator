@@ -13,6 +13,7 @@ let displayValue;
 
 
 deleteBtn.addEventListener("click", ()=>{
+   if(operationChain.length >= 1){return;}
    botOutput.textContent = botOutput.textContent.slice(0 , -1)
 });
 
